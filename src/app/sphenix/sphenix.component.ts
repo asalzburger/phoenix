@@ -19,8 +19,9 @@ export class SphenixComponent implements OnInit {
 
   ngOnInit() {
     this.eventDisplay.init(new Configuration());
-    this.eventDisplay.loadGeometryFromOBJ('assets/geometry/sPhenix/ITSU.obj', 'ITSU', 0xaaaaaa, false);
-    this.eventDisplay.loadGeometryFromOBJ('assets/geometry/sPhenix/Silicon.obj', 'Silicon', 0x356aa5, false);
+    this.eventDisplay.loadGeometryFromOBJ('assets/geometry/sPhenix/ITSU.obj', 'ITSU', 0xaaaaaa, true);
+    this.eventDisplay.loadGeometryFromOBJ('assets/geometry/sPhenix/Silicon.obj', 'Silicon', 0x356aa5, true);
+    this.eventDisplay.loadGeometryFromOBJ('assets/geometry/sPhenix/SVTX.obj', 'SVTX', 0x516ff5, true);
   }
 
 }
